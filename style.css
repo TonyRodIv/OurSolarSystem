@@ -5,16 +5,33 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(19, 26, 31);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(42, 46, 49);
+  border-radius: 20px;
+}
+
 body {
-  background-color: #121a1e;
+  background-color: rgba(19, 26, 31);
   font-family: "roboto";
   color: #fff;
 }
 
 main {
   background-image: url(./assets/bgPic/612526.jpg);
-  background-size: cover;
+  /* background-size: cover; */
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 nav {
@@ -35,18 +52,26 @@ nav {
   align-items: center;
   gap: 10px;
   background: rgba(34, 34, 34, 0.45);
-  backdrop-filter: blur(5px);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar.change {
+  background: rgba(19, 26, 31, 0.45);
+  backdrop-filter: blur(50px);
 }
 
 header {
-  background: linear-gradient(
-    180deg,
-    rgba(34, 34, 34, 0.45) 0%,
-    rgba(13, 13, 13, 0.585) 29.17%,
-    rgba(19, 26, 31, 0.9) 90.1%
-  );
+  background: linear-gradient(180deg,
+      rgba(34, 34, 34, 0.45) 0%,
+      rgba(13, 13, 13, 0.585) 29.17%,
+      rgba(19, 26, 31, 1) 90.1%);
   height: 100vh;
   padding: 0px 50px 0px 80px;
+}
+
+
+section {
+  height: 90vh;
 }
 
 .title {
@@ -74,6 +99,7 @@ header {
   border: 2px solid #e6e6e6;
   backdrop-filter: blur(1px);
 }
+
 .gallery .planetTitle {
   font-family: "Roboto Serif";
   font-style: normal;
@@ -87,16 +113,75 @@ header {
 
   text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
-.gallery{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
+.cardsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
-  width: 340px;
-  height: 200px;
+  width: 283px;
+  height: 159px;
   border: 1px solid #464646;
+  background: url(./assets/bgCard.png);
+  opacity: 0.85;
+  background-size: cover;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5));
   backdrop-filter: blur(2.5px);
   border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card p {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cardImg {
+  height: 100px;
+}
+
+
+@media screen and (max-width: 1020px) {
+  header {
+    padding: 0px 10px;
+  }
+
+  .gallery {
+    align-items: center;
+  }
+
+  .cardsGrid {
+    justify-content: center;
+  }
+
+  .card {
+    width: 340px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .cardsGrid {
+    justify-content: center;
+  }
 }
