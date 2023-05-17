@@ -72,6 +72,7 @@ header {
 
 section {
   height: 90vh;
+  padding-bottom: 20px;
 }
 
 .title {
@@ -118,6 +119,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  animation: up 1s ease-in-out;
 }
 
 .cardsGrid {
@@ -160,6 +163,17 @@ section {
   height: 100px;
 }
 
+
+@keyframes up{
+  from{
+      opacity: 0;
+      transform: translateY(16px);
+  }
+
+  to{
+      opacity: 1;
+  }
+}
 
 @media screen and (max-width: 1020px) {
   header {
