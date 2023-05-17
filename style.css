@@ -41,6 +41,7 @@ nav {
 header {
     background: linear-gradient(180deg, rgba(34, 34, 34, 0.45) 0%, rgba(13, 13, 13, 0.585) 29.17%, rgba(19, 26, 31, 0.9) 90.1%);
     height: 100vh;
+    padding: 0px 50px 0px 80px;
 }
 
 .title {
@@ -68,4 +69,17 @@ header {
     border: 2px solid #E6E6E6;
     backdrop-filter: blur(1px);
 
+}
+.gallery .planetTitle{
+    font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 29px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
