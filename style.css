@@ -1,85 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #121A1E;
-    font-family: 'roboto';
-    color: #fff;
+  background-color: #121a1e;
+  font-family: "roboto";
+  color: #fff;
 }
 
 main {
-    background-image: url(./assets/bgPic/612526.jpg);
-    background-size: cover;
-    height: 100vh;
+  background-image: url(./assets/bgPic/612526.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
 nav {
-    position: sticky;
-    height: 50px;
-    top: 0;
+  position: sticky;
+  height: 50px;
+  top: 0;
 
-    font-family: 'Roboto Serif';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
 
-    color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: rgba(34, 34, 34, 0.45);
-    backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: rgba(34, 34, 34, 0.45);
+  backdrop-filter: blur(5px);
 }
 
 header {
-    background: linear-gradient(180deg, rgba(34, 34, 34, 0.45) 0%, rgba(13, 13, 13, 0.585) 29.17%, rgba(19, 26, 31, 0.9) 90.1%);
-    height: 100vh;
-    padding: 0px 50px 0px 80px;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 34, 0.45) 0%,
+    rgba(13, 13, 13, 0.585) 29.17%,
+    rgba(19, 26, 31, 0.9) 90.1%
+  );
+  height: 100vh;
+  padding: 0px 50px 0px 80px;
 }
 
 .title {
-    font-family: 'Roboto Slab';
-    height: 60vh;
-    display: flex;
-    align-items: end;
-    justify-content: center;
+  font-family: "Roboto Slab";
+  height: 60vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
 .title h1 {
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 110px;
-    line-height: 145px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 110px;
+  line-height: 145px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-    color: rgba(253, 253, 253, 0.9);
-    margin-left: 25px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: rgba(253, 253, 253, 0.9);
+  margin-left: 25px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
-    border: 2px solid #E6E6E6;
-    backdrop-filter: blur(1px);
-
+  border: 2px solid #e6e6e6;
+  backdrop-filter: blur(1px);
 }
-.gallery .planetTitle{
-    font-family: 'Roboto Serif';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 29px;
-display: flex;
-align-items: center;
+.gallery .planetTitle {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 
-text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card {
+  width: 340px;
+  height: 200px;
+  border: 1px solid #464646;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5));
+  backdrop-filter: blur(2.5px);
+  border-radius: 15px;
 }
